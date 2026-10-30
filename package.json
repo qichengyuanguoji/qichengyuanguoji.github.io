@@ -1,0 +1,9 @@
+{
+  "name": "logi-quote-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "国际物流报价助手 - 纯本地个人工具（零构建、零依赖）",
+  "scripts": {
+    "test": "node --test test/test_m0.js test/test_m1.js test/test_m2.js test/test_m3.js test/test_m4.js test/test_m5.js test/test_m6.js test/test_m7.js test/test_m8.js test/test_v2_calc.js test/test_csv.js test/test_fba.js test/test_fba_remove.js test/test_wh_xlsx.js test/test_ui_smoke.js test/test_fsio.js test/test_boot.js test/test_repro_channels.js test/test_excel.js test/test_upsert.js test/test_todo_window.js test/test_grid.js test/test_perf.js test/test_quickperf.js test/test_country.js test/test_quote_card.js test/test_point_channel.js test/test_datafile.js test/test_quote_range.js test/test_carrier_filter.js test/test_type_filter.js test/test_http_data.js test/test_http_boot.js test/test_deploy.js"
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国际物流报价助手</title>
+<link rel="stylesheet" href="styles.css">
+<!--
+  启动方式：
+  1) 推荐：双击「启动服务.bat」（或在本目录执行 node serve.js），用 http://localhost:5173 打开。
+     服务在本机开了 /api/data 读写接口，页面直接读写项目目录里的 data.json——
+     每次增删改都会自动整份写回，不用选文件、不用授权。
+  2) 直接双击本文件也能用，但 file:// 下浏览器不允许绑定磁盘文件，数据只存在浏览器里
+     （清缓存会丢），可在「数据与设置 → 导出备份」手动另存。
+
+  关联项目空间（WorkBuddy 资料库/知识库）：
+  https://www.workbuddy.cn/space/d/YTmXvSbxJA3LlgxcS5O63d
+  说明：本文件所属项目的在线空间，用于存放参考资料、需求讨论与归档。
+-->
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">国际物流<br>报价助手</div>
+    <nav id="nav">
+      <a data-page="home" class="nav-item active">首页总览</a>
+      <a data-page="freight" class="nav-item">运费测算</a>
+      <a data-page="channels" class="nav-item">渠道价格库</a>
+      <a data-page="profit" class="nav-item">利润测算</a>
+      <a data-page="records" class="nav-item">查询记录</a>
+      <a data-page="settings" class="nav-item">数据与设置</a>
+    </nav>
+    <div class="side-foot"><span id="conn-dot" class="dot"></span><span id="conn-text">已连接</span></div>
+  </aside>
+  <main id="main">
+    <header id="topbar">
+      <span class="title">国际物流报价助手</span>
+      <span id="data-path" class="data-path"></span>
+    </header>
+    <section id="content"></section>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<script src="js/util.js"></script>
+<script src="js/csv.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/excel.js"></script>
+<script src="js/db.js"></script>
+<script src="js/fsio.js"></script>
+<script src="js/store.js"></script>
+<script src="js/fba.js"></script>
+<script src="js/calc.js"></script>
+<script src="js/router.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/pages/freight.js"></script>
+<script src="js/pages/channels.js"></script>
+<script src="js/pages/profit.js"></script>
+<script src="js/pages/records.js"></script>
+<script src="js/pages/settings.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
